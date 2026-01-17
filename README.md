@@ -26,7 +26,8 @@ buoy-detector/
 │
 ├── data/
 │   ├── images/           # obrazy .jpg / .png
-│   └── labels/           # adnotacje YOLO Darknet (.txt)
+│   ├── labels/           # adnotacje YOLO Darknet (.txt)
+│   └── buoy_dataset.mat
 │
 ├── models/
 │   └── net_buoy.mat      # wytrenowana sieć (tworzona przez train_net.m)
@@ -34,5 +35,7 @@ buoy-detector/
 ├── results/
 │   ├── figures/          # confusion matrix, przykładowe detekcje (zapisywane automatycznie)
 │   └── logs/             # logi z treningu i detekcji (zapisywane automatycznie)
+│
+├── main.mlapp            # Interfejs aplikacji
 │
 └── README.md

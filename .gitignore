@@ -6,6 +6,5 @@
 *.mex*
 
 # Dane wygenerowane
-buoy_dataset.mat
-models/
+data/
 results/
