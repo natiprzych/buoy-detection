@@ -1,0 +1,11 @@
+# MATLAB
+*.asv
+*.m~
+*.slprj/
+*.autosave
+*.mex*
+
+# Dane wygenerowane
+buoy_dataset.mat
+models/
+results/
