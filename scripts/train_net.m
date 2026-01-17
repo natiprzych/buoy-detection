@@ -1,6 +1,6 @@
 clear; clc;
 
-load('buoy_dataset.mat','X','T');
+load('data/buoy_dataset.mat','X','T');
 
 [numSamples,numFeatures] = size(X);
 

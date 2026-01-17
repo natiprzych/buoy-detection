@@ -66,8 +66,8 @@ end
 X = allFeatures;
 T = allLabels;
 
-save('buoy_dataset.mat', 'X', 'T');
+save('data/buoy_dataset.mat', 'X', 'T');
 
-disp('Zapisano buoy_dataset.mat');
+disp('Zapisano data/buoy_dataset.mat');
 disp(['Liczba próbek: ', num2str(size(X,1))]);
 disp(['Liczba cech na próbkę: ', num2str(size(X,2))]);
