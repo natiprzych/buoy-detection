@@ -5,6 +5,4 @@
 *.autosave
 *.mex*
 
-# Dane wygenerowane
-data/
-results/
+/results/figures

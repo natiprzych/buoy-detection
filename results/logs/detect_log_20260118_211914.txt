@@ -1,0 +1,4 @@
+Data: 18-Jan-2026 21:19:14
+Plik obrazu: C:\Users\Dobrawa\Desktop\studia\5_sem\analiza_obrazow\project\data\images\13150.jpg
+Boje: 1
+Ludzie: 3

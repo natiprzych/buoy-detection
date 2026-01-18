@@ -14,8 +14,13 @@ I = imread(imgPath);
 [H,W,~] = size(I);
 
 orangeMask = segment_orange_mask(I);
-
 [L,num] = bwlabel(orangeMask);
+
+numBuoys = 0;
+numSwimmers = 0;
+idxValid = [];
+YnewBin = [];
+bboxes = [];
 
 if num == 0
     figure; imshow(I);
@@ -23,133 +28,137 @@ if num == 0
     return;
 end
 
-stats = regionprops(L,'BoundingBox');
-
-features = zeros(num,5);
-validIdx = false(num,1);
-
-for k = 1:num
-    regionMask = (L == k);
-    feat = compute_region_features(regionMask);
-    if ~isempty(feat)
-        features(k,:) = feat;
-        validIdx(k) = true;
-    end
-end
-
-if ~any(validIdx)
-    figure; imshow(I);
-    title('Brak obiektow z poprawnymi cechami.');
-    return;
-end
-
-featuresValid = features(validIdx,:);
-Xnew = featuresValid.';
-
-Ynew = net(Xnew);
-YnewBin = Ynew > 0.5;
-
-idxValid = find(validIdx);
-numValid = numel(idxValid);
-bboxes = zeros(numValid,4);
-for i = 1:numValid
-    k = idxValid(i);
-    bb = stats(k).BoundingBox;
-    bboxes(i,:) = bb;
-end
-
-isBuoy    = YnewBin == 1;
-isSwimmer = YnewBin == 0;
-
-keep = true(numValid,1);
-
-for i = 1:numValid
-    if ~isSwimmer(i)
-        continue;
+if num > 0
+    stats = regionprops(L,'BoundingBox');
+    features = zeros(num,5);
+    validIdx = false(num,1);
+    
+    for k = 1:num
+        regionMask = (L == k);
+        feat = compute_region_features(regionMask);
+        if ~isempty(feat)
+            features(k,:) = feat;
+            validIdx(k) = true;
+        end
     end
     
-    bbS = bboxes(i,:);
-    cx = bbS(1) + bbS(3)/2;
-    cy = bbS(2) + bbS(4)/2;
+    if ~any(validIdx)
+        figure; imshow(I);
+        title('Brak obiektow z poprawnymi cechami.');
+        return;
+    end
     
-    for j = 1:numValid
-        if ~isBuoy(j)
+    featuresValid = features(validIdx,:);
+    Xnew = featuresValid.';
+    
+    Ynew = net(Xnew);
+    YnewBin = Ynew > 0.5;
+    
+    idxValid = find(validIdx);
+    numValid = numel(idxValid);
+    bboxes = zeros(numValid,4);
+    for i = 1:numValid
+        k = idxValid(i);
+        bb = stats(k).BoundingBox;
+        bboxes(i,:) = bb;
+    end
+    
+    isBuoy    = YnewBin == 1;
+    isSwimmer = YnewBin == 0;
+    
+    keep = true(numValid,1);
+    
+    for i = 1:numValid
+        if ~isSwimmer(i)
             continue;
         end
         
-        bbB = bboxes(j,:);
-        if cx >= bbB(1) && cx <= bbB(1)+bbB(3) && ...
-           cy >= bbB(2) && cy <= bbB(2)+bbB(4)
-            keep(i) = false;
-            break;
+        bbS = bboxes(i,:);
+        cx = bbS(1) + bbS(3)/2;
+        cy = bbS(2) + bbS(4)/2;
+        
+        for j = 1:numValid
+            if ~isBuoy(j)
+                continue;
+            end
+            
+            bbB = bboxes(j,:);
+            if cx >= bbB(1) && cx <= bbB(1)+bbB(3) && ...
+               cy >= bbB(2) && cy <= bbB(2)+bbB(4)
+                keep(i) = false;
+                break;
+            end
         end
     end
-end
 
-for i = 1:numValid
-    if ~isBuoy(i) || ~keep(i)
-        continue;
-    end
-    
-    bbSmall = bboxes(i,:);
-    areaSmall = bbSmall(3)*bbSmall(4);
-    
-    for j = 1:numValid
-        if i == j || ~isBuoy(j) || ~keep(j)
+
+    for i = 1:numValid
+        if ~isBuoy(i) || ~keep(i)
             continue;
         end
         
-        bbBig = bboxes(j,:);
-        areaBig = bbBig(3)*bbBig(4);
+        bbSmall = bboxes(i,:);
+        areaSmall = bbSmall(3)*bbSmall(4);
         
-        if areaSmall >= areaBig
-            continue;
+        for j = 1:numValid
+            if i == j || ~isBuoy(j) || ~keep(j)
+                continue;
+            end
+            
+            bbBig = bboxes(j,:);
+            areaBig = bbBig(3)*bbBig(4);
+            
+            if areaSmall >= areaBig
+                continue;
+            end
+            
+            if bbSmall(1) >= bbBig(1) && ...
+               bbSmall(2) >= bbBig(2) && ...
+               bbSmall(1)+bbSmall(3) <= bbBig(1)+bbBig(3) && ...
+               bbSmall(2)+bbSmall(4) <= bbBig(2)+bbBig(4)
+                keep(i) = false;
+                break;
+            end
         end
-        
-        if bbSmall(1) >= bbBig(1) && ...
-           bbSmall(2) >= bbBig(2) && ...
-           bbSmall(1)+bbSmall(3) <= bbBig(1)+bbBig(3) && ...
-           bbSmall(2)+bbSmall(4) <= bbBig(2)+bbBig(4)
-            keep(i) = false;
-            break;
-        end
+    end
+    
+    YnewBin = YnewBin(keep);
+    bboxes  = bboxes(keep,:);
+    idxValid = idxValid(keep);
+    
+    isBuoy    = YnewBin == 1;
+    isSwimmer = YnewBin == 0;
+    
+    numBuoys    = sum(isBuoy);
+    numSwimmers = sum(isSwimmer);
+    
+    if ~exist('results','dir')
+        mkdir('results');
+    end
+    figDir = fullfile('results','figures');
+    logDir = fullfile('results','logs');
+    if ~exist(figDir,'dir')
+        mkdir(figDir);
+    end
+    if ~exist(logDir,'dir')
+        mkdir(logDir);
     end
 end
 
-YnewBin = YnewBin(keep);
-bboxes  = bboxes(keep,:);
-idxValid = idxValid(keep);
-
-isBuoy    = YnewBin == 1;
-isSwimmer = YnewBin == 0;
-
-numBuoys    = sum(isBuoy);
-numSwimmers = sum(isSwimmer);
-
-if ~exist('results','dir')
-    mkdir('results');
-end
-figDir = fullfile('results','figures');
-logDir = fullfile('results','logs');
-if ~exist(figDir,'dir')
-    mkdir(figDir);
-end
-if ~exist(logDir,'dir')
-    mkdir(logDir);
-end
 
 figure; imshow(I); hold on;
-
-for i = 1:numel(idxValid)
-    bb = bboxes(i,:);
-    if YnewBin(i)
-        rectangle('Position',bb,'EdgeColor','g','LineWidth',2);
-    else
-        rectangle('Position',bb,'EdgeColor','b','LineWidth',2);
+if ~isempty(idxValid)
+    for i = 1:numel(YnewBin)
+        bb = bboxes(i,:);
+        if YnewBin(i)
+            rectangle('Position',bb,'EdgeColor','g','LineWidth',2);
+        else
+            rectangle('Position',bb,'EdgeColor','b','LineWidth',2);
+        end
     end
 end
+title(sprintf('Boje: %d   Ludzie: %d', numBuoys, numSwimmers));
 
-title(sprintf('Boje: %d   Ludzie: %d',numBuoys,numSwimmers));
 
 [~,baseName,~] = fileparts(fn);
 

@@ -12,14 +12,13 @@ idx = randperm(N);
 Xmat = Xmat(:,idx);
 Trow = Trow(:,idx);
 
-hiddenLayerSize = 10;
-net = feedforwardnet(hiddenLayerSize);
+hiddenLayerSize = 8; 
+net = patternnet(hiddenLayerSize); 
 
-net.trainFcn = 'trainlm';
+net.trainFcn = 'trainbr'; 
 
-net.divideParam.trainRatio = 0.7;
-net.divideParam.valRatio   = 0.15;
-net.divideParam.testRatio  = 0.15;
+net.divideParam.trainRatio = 0.8;
+net.divideParam.testRatio  = 0.2;
 
 [net,tr] = train(net,Xmat,Trow);
 
@@ -68,20 +67,32 @@ dt    = datetime('now');
 dtStr = char(dt);
 ts    = char(datetime('now','Format','yyyyMMdd_HHmmss'));
 
-logPath = fullfile(logDir,['train_log_',ts,'.txt']);
-fid = fopen(logPath,'w');
+
+logPath = fullfile(logDir, 'history_log.txt');
+fid = fopen(logPath, 'a'); 
 if fid ~= -1
-    fprintf(fid,'Data: %s\n',dtStr);
-    fprintf(fid,'Liczba probek: %d\n',numSamples);
-    fprintf(fid,'Liczba cech: %d\n',numFeatures);
-    fprintf(fid,'Train ratio: %.2f\n',net.divideParam.trainRatio);
-    fprintf(fid,'Val ratio: %.2f\n',net.divideParam.valRatio);
-    fprintf(fid,'Test ratio: %.2f\n',net.divideParam.testRatio);
-    fprintf(fid,'Accuracy (all): %.4f\n',acc_all);
-    fprintf(fid,'Accuracy (test): %.4f\n',acc_test);
+    algName = net.trainFcn;
+   
+    fprintf(fid, '\n====================================================\n');
+    fprintf(fid, 'SESJA TRENINGOWA: %s\n', datestr(now));
+    fprintf(fid, '----------------------------------------------------\n');
+    
+    fprintf(fid, 'KONFIGURACJA:\n');
+    fprintf(fid, '  Algorytm:      %s\n', algName);
+    fprintf(fid, '  Liczba neuronow: %d\n', hiddenLayerSize); 
+    fprintf(fid, '  Liczba probek:   %d\n', numSamples);
+    fprintf(fid, '  Liczba cech:     %d\n', numFeatures);
+
+    fprintf(fid, '  Podzial (T/V/T): %.2f / %.2f / %.2f\n', ...
+        net.divideParam.trainRatio, net.divideParam.valRatio, net.divideParam.testRatio);
+    
+    fprintf(fid, 'WYNIKI:\n');
+    fprintf(fid, '  Accuracy (ALL):  %.4f\n', acc_all);
+    fprintf(fid, '  Accuracy (TEST): %.4f\n', acc_test);
+    
     fclose(fid);
 end
 
+fprintf('Dopisano wyniki do: %s\n', logPath);
 disp('Zapisano models/net_buoy.mat');
 disp(['Zapisano ',confFigPath]);
-disp(['Zapisano ',logPath]);

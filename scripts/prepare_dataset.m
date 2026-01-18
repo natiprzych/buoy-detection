@@ -3,7 +3,6 @@ clear; clc;
 imageDir = fullfile('data','images');
 labelDir = fullfile('data','labels');
 imageExt = '*.jpg';
-
 imageFiles = dir(fullfile(imageDir, imageExt));
 
 buoyClassId    = 0;

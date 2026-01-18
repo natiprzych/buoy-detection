@@ -1,0 +1,4 @@
+Data: 18-Jan-2026 21:18:39
+Plik obrazu: C:\Users\Dobrawa\Desktop\studia\5_sem\analiza_obrazow\project\data\images\4822.jpg
+Boje: 1
+Ludzie: 2

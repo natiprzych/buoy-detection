@@ -1,0 +1,1716 @@
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:00
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:06
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:10
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:16
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:21
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:25
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:28
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  1.0000
+  Accuracy (TEST): 1.0000
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:31
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:34
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9724
+  Accuracy (TEST): 0.8611
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:37
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:40
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:43
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9444
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:46
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:49
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9724
+  Accuracy (TEST): 0.8611
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:52
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9444
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:55
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:20:58
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  1.0000
+  Accuracy (TEST): 1.0000
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:21:29
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9444
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:21:35
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:21:38
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9444
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:21:41
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9724
+  Accuracy (TEST): 0.8611
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:21:45
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:21:49
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:21:52
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  1.0000
+  Accuracy (TEST): 1.0000
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:21:55
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:21:59
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9444
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:22:02
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9444
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:22:06
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:22:09
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9724
+  Accuracy (TEST): 0.8611
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:22:13
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  1.0000
+  Accuracy (TEST): 1.0000
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:09
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:11
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:14
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9444
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:16
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:19
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:22
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:24
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:27
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:30
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:33
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:36
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9724
+  Accuracy (TEST): 0.8611
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:39
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:42
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:45
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:48
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9669
+  Accuracy (TEST): 0.8333
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:51
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:23:55
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:24:09
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:24:13
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8519
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:24:16
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9630
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:24:19
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9630
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:24:23
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:24:27
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 7
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:24:34
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9630
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:24:38
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:24:41
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  1.0000
+  Accuracy (TEST): 1.0000
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:24:44
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:24:48
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9630
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:24:52
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8519
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:24:55
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9259
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:24:59
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9630
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:25:03
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9630
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:25:07
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:25:11
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8519
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:25:15
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 6
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:25:31
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 4
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9259
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:25:52
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 4
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9630
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:25:57
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 4
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:26:02
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 4
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.15 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9259
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:26:55
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9444
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:26:57
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:00
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:02
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:05
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:07
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9724
+  Accuracy (TEST): 0.8611
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:10
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:12
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9444
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:15
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:17
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:20
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:23
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:25
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:29
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9724
+  Accuracy (TEST): 0.8611
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:32
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9444
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:35
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9444
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:38
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:41
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:55
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9444
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:27:58
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9444
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:28:01
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:28:04
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:28:08
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9724
+  Accuracy (TEST): 0.8611
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:28:13
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 3
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9724
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:28:37
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9444
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:28:40
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:28:42
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:28:44
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9724
+  Accuracy (TEST): 0.8611
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:28:47
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9724
+  Accuracy (TEST): 0.8611
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:28:49
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  1.0000
+  Accuracy (TEST): 1.0000
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:28:52
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:28:54
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:28:57
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9444
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:29:00
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:29:02
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:29:05
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:29:08
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:29:11
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:29:14
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:29:17
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.70 / 0.10 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:29:41
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.05 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9259
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:29:44
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.05 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9724
+  Accuracy (TEST): 0.8148
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:29:47
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.05 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9630
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:29:50
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.05 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9630
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:29:55
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.05 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9724
+  Accuracy (TEST): 0.8519
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:30:02
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.05 / 0.15
+WYNIKI:
+  Accuracy (ALL):  1.0000
+  Accuracy (TEST): 1.0000
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:30:05
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.05 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8519
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:30:08
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.05 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8519
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:30:12
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.05 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9630
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:30:15
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.05 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9630
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:30:19
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.05 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:30:23
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.05 / 0.15
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9259
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:30:48
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.75 / 0.05 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:30:52
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.75 / 0.05 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9890
+  Accuracy (TEST): 0.9444
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:30:56
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.75 / 0.05 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:31:00
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.75 / 0.05 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:31:03
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.75 / 0.05 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9834
+  Accuracy (TEST): 0.9167
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:31:14
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.75 / 0.05 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9724
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:31:19
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.75 / 0.05 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:31:55
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:31:57
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9779
+  Accuracy (TEST): 0.8889
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:32:00
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9724
+  Accuracy (TEST): 0.8611
+
+====================================================
+SESJA TRENINGOWA: 18-Jan-2026 20:32:02
+----------------------------------------------------
+KONFIGURACJA:
+  Algorytm:      trainbr
+  Liczba neuronow: 5
+  Liczba probek:   181
+  Liczba cech:     5
+  Podzial (T/V/T): 0.80 / 0.00 / 0.20
+WYNIKI:
+  Accuracy (ALL):  0.9945
+  Accuracy (TEST): 0.9722
