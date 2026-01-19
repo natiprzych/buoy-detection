@@ -17,6 +17,8 @@ buoy-detector/
 ├── src/                  
 │   ├── read_yolo_annotations.m
 │   ├── segment_orange_mask.m
+│   ├── detect_objects_logic.m
+│   ├── visualize_results.m
 │   └── compute_region_features.m
 │
 ├── scripts/              
