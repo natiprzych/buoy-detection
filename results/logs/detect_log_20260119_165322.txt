@@ -1,0 +1,4 @@
+Data: 19-Jan-2026 16:53:22
+Plik obrazu: D:\Pliki\Studia\Analiza Obrazów\Projekt\buoy-detection\data\images\13610.jpg
+Boje: 1
+Ludzie: 2

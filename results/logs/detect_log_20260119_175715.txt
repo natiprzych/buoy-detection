@@ -1,0 +1,4 @@
+Data: 19-Jan-2026 17:57:15
+Plik obrazu: D:\Pliki\Studia\Analiza Obrazów\Projekt\buoy-detection\data\images\13459.jpg
+Boje: 1
+Ludzie: 4
