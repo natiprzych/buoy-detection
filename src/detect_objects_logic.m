@@ -1,24 +1,8 @@
 function [bboxes, labels, numBuoys, numSwimmers] = detect_objects_logic(I, net)
-% DETECT_OBJECTS_LOGIC Główna logika detekcji (niezależna od GUI)
-%
-% WEJŚCIA:
-%   I   - obraz wejściowy (macierz HxWx3)
-%   net - wytrenowana sieć neuronowa (obiekt network)
-%
-% WYJŚCIA:
-%   bboxes      - macierz Nx4 z ramkami (Bounding Boxes)
-%   labels      - wektor Nx1 (1 = boja, 0 = pływak)
-%   numBuoys    - liczba wykrytych boi
-%   numSwimmers - liczba wykrytych pływaków
-
-    % 1. Segmentacja pomarańczowej maski
-    % (Zakładam, że masz funkcję segment_orange_mask w folderze src)
     orangeMask = segment_orange_mask(I);
 
-    % 2. Znajdź spójne regiony
     [L, num] = bwlabel(orangeMask);
 
-    % --- Obsługa przypadku, gdy nic nie znaleziono ---
     if num == 0
         bboxes = [];
         labels = [];
@@ -27,22 +11,30 @@ function [bboxes, labels, numBuoys, numSwimmers] = detect_objects_logic(I, net)
         return;
     end
 
-    % 3. Oblicz cechy dla każdego regionu
     stats = regionprops(L, 'BoundingBox');
-    features = zeros(num, 5);
     validIdx = false(num, 1);
+    all_feats = cell(num, 1);
 
     for k = 1:num
         regionMask = (L == k);
-        % (Zakładam, że masz funkcję compute_region_features w folderze src)
-        feat = compute_region_features(regionMask);
-        if ~isempty(feat)
-            features(k, :) = feat;
+        
+        bb = stats(k).BoundingBox;
+        x0 = max(1, floor(bb(1)));
+        y0 = max(1, floor(bb(2)));
+        x1 = min(size(I,2), ceil(bb(1)+bb(3)));
+        y1 = min(size(I,1), ceil(bb(2)+bb(4)));
+        
+        I_crop = I(y0:y1, x0:x1, :);
+        regionMaskCrop = regionMask(y0:y1, x0:x1);
+
+        feat = compute_region_features(regionMaskCrop, I_crop);
+        
+    if ~isempty(feat)
+            all_feats{k} = feat; 
             validIdx(k) = true;
         end
     end
 
-    % --- Jeśli znaleziono plamy, ale żadna nie ma poprawnych cech ---
     if ~any(validIdx)
         bboxes = [];
         labels = [];
@@ -51,16 +43,13 @@ function [bboxes, labels, numBuoys, numSwimmers] = detect_objects_logic(I, net)
         return;
     end
 
-    % 4. Klasyfikacja przez sieć neuronową
-    featuresValid = features(validIdx, :);
+    featuresValid = cell2mat(all_feats(validIdx)); 
     Xnew = featuresValid.';
-    
-    % !!! WAŻNE: Tutaj używamy przekazanego 'net', a nie 'app.Net' !!!
+
     Ynew = net(Xnew);
     
     YnewBin = Ynew > 0.5;
 
-    % 5. Przygotuj wstępne bounding boxy
     idxValid = find(validIdx);
     numValid = numel(idxValid);
     bboxes = zeros(numValid, 4);
@@ -73,9 +62,6 @@ function [bboxes, labels, numBuoys, numSwimmers] = detect_objects_logic(I, net)
     isBuoy = YnewBin == 1;
     isSwimmer = YnewBin == 0;
 
-    % 6. LOGIKA FILTROWANIA (Twoja autorska logika)
-    
-    % A. Usuń pływaków wewnątrz boi
     keep = true(numValid, 1);
 
     for i = 1:numValid
@@ -93,15 +79,21 @@ function [bboxes, labels, numBuoys, numSwimmers] = detect_objects_logic(I, net)
             end
 
             bbB = bboxes(j, :);
-            if cx >= bbB(1) && cx <= bbB(1)+bbB(3) && ...
-               cy >= bbB(2) && cy <= bbB(2)+bbB(4)
+            
+            padW = bbB(3) * 0.15;
+            padH = bbB(4) * 0.15;
+            
+            extendedBB = [bbB(1)-marginW, bbB(2)-marginH, ...
+                          bbB(3)+2*marginW, bbB(4)+2*marginH];
+
+            if cx >= extendedBB(1) && cx <= extendedBB(1)+extendedBB(3) && ...
+               cy >= extendedBB(2) && cy <= extendedBB(2)+extendedBB(4)
                 keep(i) = false;
                 break;
             end
         end
     end
 
-    % B. Usuń małe boje wewnątrz większych
     for i = 1:numValid
         if ~isBuoy(i) || ~keep(i)
             continue;
@@ -132,16 +124,13 @@ function [bboxes, labels, numBuoys, numSwimmers] = detect_objects_logic(I, net)
         end
     end
 
-    % 7. Zastosuj filtrowanie i przygotuj wynik
     YnewBin = YnewBin(keep);
     bboxes = bboxes(keep, :);
 
-    % 8. Policz ostateczne wyniki
     isBuoy = YnewBin == 1;
     isSwimmer = YnewBin == 0;
     numBuoys = sum(isBuoy);
     numSwimmers = sum(isSwimmer);
 
-    % 9. Etykiety wyjściowe
     labels = YnewBin;
 end

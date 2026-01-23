@@ -47,7 +47,8 @@ for i = 1:numel(imageFiles)
         end
         
         objMaskCrop = orangeMask(y0:y1, x0:x1);
-        feat = compute_region_features(objMaskCrop);
+        I_crop = I(y0:y1, x0:x1, :);
+        feat = compute_region_features(objMaskCrop, I_crop);
         if isempty(feat)
             continue;
         end

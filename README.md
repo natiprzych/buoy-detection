@@ -6,7 +6,9 @@ System do automatycznego wykrywania **czerwonych boi nawigacyjnych** oraz **pły
 Wykorzystuje:
 - segmentację koloru (HSV),
 - klasyczne cechy kształtu (morfologia),
-- prostą sieć neuronową `feedforwardnet` do klasyfikacji obiektów: **boja vs człowiek**.
+- prostą sieć neuronową `patternnet` do klasyfikacji obiektów: **boja vs człowiek**.
+- sieć neuronowa zawiera `8` neuronów oraz jest generowana poprzez algorytm `patternnet`
+- takie ustawienia zostały dokładnie dobrane poprzez parę tysięcy automatycznych testów oraz porównania dokładności w wykrywaniu obiektów
 
 ---
 

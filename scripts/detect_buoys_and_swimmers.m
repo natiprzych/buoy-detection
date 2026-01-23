@@ -30,14 +30,24 @@ end
 
 if num > 0
     stats = regionprops(L,'BoundingBox');
-    features = zeros(num,5);
     validIdx = false(num,1);
+    all_feats = cell(num, 1); %
     
     for k = 1:num
         regionMask = (L == k);
-        feat = compute_region_features(regionMask);
+
+        bb = stats(k).BoundingBox;
+        x0 = max(1, floor(bb(1)));
+        y0 = max(1, floor(bb(2)));
+        x1 = min(size(I,2), ceil(bb(1)+bb(3)));
+        y1 = min(size(I,1), ceil(bb(2)+bb(4)));
+        
+        I_crop = I(y0:y1, x0:x1, :);
+        regionMaskCrop = regionMask(y0:y1, x0:x1);
+
+        feat = compute_region_features(regionMaskCrop, I_crop);
         if ~isempty(feat)
-            features(k,:) = feat;
+            all_feats{k} = feat; 
             validIdx(k) = true;
         end
     end
@@ -48,7 +58,7 @@ if num > 0
         return;
     end
     
-    featuresValid = features(validIdx,:);
+    featuresValid = cell2mat(all_feats(validIdx));
     Xnew = featuresValid.';
     
     Ynew = net(Xnew);

@@ -1,21 +1,14 @@
 function mask = segment_orange_mask(I)
-    if ~isa(I, 'double')
-        I = im2double(I);
-    end
+    I_double = im2double(I);
+    hsv = rgb2hsv(I_double);
     
-    hsv = rgb2hsv(I);
-    H = hsv(:,:,1);
-    S = hsv(:,:,2);
-    V = hsv(:,:,3);
+    orange = (hsv(:,:,1) > 0.03 & hsv(:,:,1) < 0.15) & hsv(:,:,2) > 0.4;
+    red = (hsv(:,:,1) < 0.05 | hsv(:,:,1) > 0.95) & hsv(:,:,2) > 0.4;
     
-    red1   = (H < 0.05);
-    red2   = (H > 0.95);
-    orange = (H > 0.03 & H < 0.15);
+    dark_objects = hsv(:,:,3) < 0.2 & hsv(:,:,2) < 0.3; 
     
-    colorMask = (red1 | red2 | orange) & S > 0.4 & V > 0.2;
+    combinedMask = orange | red | dark_objects;
     
-    mask = bwareaopen(colorMask, 30);
-    se = strel('disk', 2);
-    mask = imopen(mask, se);
-    mask = imclose(mask, se);
+    mask = bwareaopen(combinedMask, 20); 
+    mask = imclose(mask, strel('disk', 5));
 end

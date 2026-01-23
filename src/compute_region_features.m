@@ -1,39 +1,39 @@
-function feat = compute_region_features(mask)
+function feat = compute_region_features(mask, I_crop)
+
     mask = logical(mask);
-    
-    if ~any(mask, 'all')
-        feat = [];
-        return;
+    if ~any(mask, 'all') || isempty(I_crop)
+        feat = []; return;
     end
-    
-    CC = bwconncomp(mask);
-    stats = regionprops(CC, 'Area', 'Eccentricity', 'Solidity', ...
-                             'Perimeter', 'BoundingBox');
-    
-    if isempty(stats)
-        feat = [];
-        return;
-    end
-    
-    areas = [stats.Area];
-    [~, idx] = max(areas);
+
+    stats = regionprops(mask, 'Area', 'Eccentricity', 'Solidity', 'Perimeter', 'BoundingBox');
+    if isempty(stats), feat = []; return; end
+    [~, idx] = max([stats.Area]);
     s = stats(idx);
+
+    geom_feat = [s.Area, s.BoundingBox(3)/s.BoundingBox(4), s.Eccentricity, s.Solidity, (4*pi*s.Area)/(s.Perimeter^2 + eps)];
+
+    I_hsv = rgb2hsv(im2double(I_crop));
+    h_channel = I_hsv(:,:,1);
+    s_channel = I_hsv(:,:,2);
+    v_channel = I_hsv(:,:,3);
+
+    pixels_h = h_channel(mask);
+    pixels_s = s_channel(mask);
+    pixels_v = v_channel(mask);
+
+    color_feat = [mean(pixels_h), mean(pixels_s), mean(pixels_v), std(pixels_h)];
+
+    I_res = imresize(I_crop, [32 32]);
     
-    A   = s.Area;
-    ecc = s.Eccentricity;
-    sol = s.Solidity;
-    P   = s.Perimeter;
-    
-    if P <= 0
-        circ = 0;
+    if size(I_res, 3) == 3
+        I_gray = rgb2gray(I_res);
     else
-        circ = 4*pi*A / (P^2);
+        I_gray = I_res;
     end
     
-    bb = s.BoundingBox;
-    w  = bb(3);
-    h  = bb(4);
-    aspect = w / h;
-    
-    feat = [A, aspect, ecc, sol, circ];
+    glcm = graycomatrix(I_gray, 'Offset', [0 1; -1 1]);
+    stats_glcm = graycoprops(glcm, {'Contrast', 'Correlation', 'Energy', 'Homogeneity'});
+    texture_feat = [mean(stats_glcm.Contrast), mean(stats_glcm.Correlation), mean(stats_glcm.Energy), mean(stats_glcm.Homogeneity)];
+
+    feat = [geom_feat, color_feat, texture_feat];
 end

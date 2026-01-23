@@ -12,7 +12,7 @@ idx = randperm(N);
 Xmat = Xmat(:,idx);
 Trow = Trow(:,idx);
 
-hiddenLayerSize = 8; 
+hiddenLayerSize = 26;
 net = patternnet(hiddenLayerSize); 
 
 net.trainFcn = 'trainbr'; 
