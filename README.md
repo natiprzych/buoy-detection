@@ -2,13 +2,27 @@
 
 Projekt z przedmiotu *Analiza Obrazów*:
 
-System do automatycznego wykrywania **czerwonych boi nawigacyjnych** oraz **pływaków (swimmerów)** na obrazach morskich.  
+---
+
+System łączy klasyczne przetwarzanie obrazu z siecią neuronową, co pozwala na skuteczne rozróżnianie obiektów o zbliżonej kolorystyce, ale odmiennej strukturze i teksturze.
+
 Wykorzystuje:
-- segmentację koloru (HSV),
-- klasyczne cechy kształtu (morfologia),
-- prostą sieć neuronową `patternnet` do klasyfikacji obiektów: **boja vs człowiek**.
-- sieć neuronowa zawiera `8` neuronów oraz jest generowana poprzez algorytm `patternnet`
-- takie ustawienia zostały dokładnie dobrane poprzez parę tysięcy automatycznych testów oraz porównania dokładności w wykrywaniu obiektów
+* segmentację koloru (HSV),
+* klasyczne cechy kształtu (morfologia),
+* **Hybrydowa ekstrakcja cech (13 parametrów):** Każdy obiekt opisany jest wektorem cech obejmującym geometrię (5), statystyki koloru HSV (4) oraz teksturę GLCM (4).
+* **Architektura Sieci:** Wykorzystanie sieci `patternnet` zoptymalizowanej pod kątem klasyfikacji binarnej (boja vs pływak).
+* **Algorytm Bayesian Regularization (`trainbr`):** Wybrany ze względu na wysoką skuteczność przy ograniczonej liczbie danych treningowych; algorytm ten nie wymaga wydzielania zbioru walidacyjnego, co pozwala na efektywniejsze wykorzystanie próbek.
+* **Optymalizacja Hiperparametrów:** Liczba **26 neuronów** w warstwie ukrytej została dobrana poprzez dwuetapowe testy (zakres 5-40, a następnie szczegółowy 25-35), osiągając stabilną dokładność testową na poziomie ok. 98.7%.
+
+---
+
+## Efektywność rozwiązania
+
+Dzięki ewolucji algorytmu od prostych masek kolorów do zaawansowanej analizy teksturalnej, system osiąga wysoką skuteczność w trudnych warunkach morskich:
+
+* **Odporność na warunki morskie:** Wykorzystanie macierzy współwystępowania poziomów szarości (**GLCM**) pozwala systemowi odróżnić chaotyczną teksturę odblasków i piany morskiej od zwartej struktury boi i ludzi.
+* **Detekcja pływaków:** Wprowadzenie rozszerzonej maski `dark_objects` w procesie segmentacji umożliwia wykrywanie osób w ciemnych piankach, które nie posiadają jaskrawych kamizelek i zlewają się z kolorem głębokiej wody.
+* **Precyzja boi:** Zaimplementowana w logice detekcji funkcja **marginesów bezpieczeństwa (padding)** skutecznie eliminuje problem "pływaków widm" wykrywanych na czubkach i antenach boi, wchłaniając je do ramki głównego obiektu.
 
 ---
 
@@ -43,3 +57,7 @@ buoy-detector/
 ├── main.mlapp            # Interfejs aplikacji
 │
 └── README.md
+```
+---
+
+**Autorzy:** Natalia Przychodzień, Dobrawa Rumszewicz, Filip Opacki, Marcin Oracz.
