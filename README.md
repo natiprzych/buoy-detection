@@ -39,6 +39,14 @@ Dzięki ewolucji algorytmu od prostych masek kolorów do zaawansowanej analizy t
 1. Otwórz MATLAB
 2. Przejdź do katalogu projektu (`buoy-detection`)
 3. Wpisz w Command Window: `run_app`
+4. Przycisk `Wczytaj` służy do wczytania obrazu
+5. Przycisk `Wykryj` służy do wykrycia boji i pływaków na wczytanym obrazie
+6. Przycisk `Zapisz` służy do zapisania wyników do `results/`
+
+### Testowanie
+
+Folder `test_data/` zawiera przykładowe obrazy, na których system działa poprawnie. Można je użyć do szybkiego przetestowania aplikacji. 
+Obrazy "zewnętrzne" mogą zawierać błędy związane z niedoskonałością systemu.
 
 ---
 
@@ -65,6 +73,8 @@ buoy-detector/
 │
 ├── models/
 │   └── net_buoy.mat      # wytrenowana sieć (tworzona przez train_net.m)
+│
+├── test_data/            # przykładowe obrazy do testowania
 │
 ├── results/
 │   ├── figures/          # confusion matrix, przykładowe detekcje (zapisywane automatycznie)
