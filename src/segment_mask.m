@@ -1,4 +1,4 @@
-function mask = segment_orange_mask(I)
+function mask = segment_mask(I)
     I_double = im2double(I);
     hsv = rgb2hsv(I_double);
     

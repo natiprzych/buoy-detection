@@ -26,13 +26,29 @@ Dzięki ewolucji algorytmu od prostych masek kolorów do zaawansowanej analizy t
 
 ---
 
+## Jak uruchomić aplikację
+
+### Wymagania
+
+* MATLAB (z Image Processing Toolbox i Neural Network Toolbox)
+* Plik `models/net_buoy.mat` (wytrenowana sieć neuronowa)
+* Wszystkie pliki z katalogu `src/` muszą być dostępne
+
+### Szybki start
+
+1. Otwórz MATLAB
+2. Przejdź do katalogu projektu (`buoy-detection`)
+3. Wpisz w Command Window: `run_app`
+
+---
+
 ## Struktura katalogów
 
 ```text
 buoy-detector/
 ├── src/                  
 │   ├── read_yolo_annotations.m
-│   ├── segment_orange_mask.m
+│   ├── segment_mask.m
 │   ├── detect_objects_logic.m
 │   ├── visualize_results.m
 │   └── compute_region_features.m
@@ -55,6 +71,7 @@ buoy-detector/
 │   └── logs/             # logi z treningu i detekcji (zapisywane automatycznie)
 │
 ├── main.mlapp            # Interfejs aplikacji
+├── run_app.m             # Skrypt uruchamiający aplikację
 │
 └── README.md
 ```

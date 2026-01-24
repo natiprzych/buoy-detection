@@ -1,7 +1,7 @@
 function [bboxes, labels, numBuoys, numSwimmers] = detect_objects_logic(I, net)
-    orangeMask = segment_orange_mask(I);
+    mask = segment_mask(I);
 
-    [L, num] = bwlabel(orangeMask);
+    [L, num] = bwlabel(mask);
 
     if num == 0
         bboxes = [];
@@ -29,7 +29,7 @@ function [bboxes, labels, numBuoys, numSwimmers] = detect_objects_logic(I, net)
 
         feat = compute_region_features(regionMaskCrop, I_crop);
         
-    if ~isempty(feat)
+        if ~isempty(feat)
             all_feats{k} = feat; 
             validIdx(k) = true;
         end
@@ -83,8 +83,8 @@ function [bboxes, labels, numBuoys, numSwimmers] = detect_objects_logic(I, net)
             padW = bbB(3) * 0.15;
             padH = bbB(4) * 0.15;
             
-            extendedBB = [bbB(1)-marginW, bbB(2)-marginH, ...
-                          bbB(3)+2*marginW, bbB(4)+2*marginH];
+            extendedBB = [bbB(1)-padW, bbB(2)-padH, ...
+                          bbB(3)+2*padW, bbB(4)+2*padH];
 
             if cx >= extendedBB(1) && cx <= extendedBB(1)+extendedBB(3) && ...
                cy >= extendedBB(2) && cy <= extendedBB(2)+extendedBB(4)

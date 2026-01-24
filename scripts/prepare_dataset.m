@@ -26,7 +26,7 @@ for i = 1:numel(imageFiles)
         continue;
     end
     
-    orangeMask = segment_orange_mask(I);
+    mask = segment_mask(I);
     
     for a = 1:numel(anns)
         classId = anns(a).classId;
@@ -46,7 +46,7 @@ for i = 1:numel(imageFiles)
             continue;
         end
         
-        objMaskCrop = orangeMask(y0:y1, x0:x1);
+        objMaskCrop = mask(y0:y1, x0:x1);
         I_crop = I(y0:y1, x0:x1, :);
         feat = compute_region_features(objMaskCrop, I_crop);
         if isempty(feat)

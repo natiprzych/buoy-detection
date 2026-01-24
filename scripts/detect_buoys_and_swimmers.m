@@ -13,8 +13,8 @@ imgPath = fullfile(fp,fn);
 I = imread(imgPath);
 [H,W,~] = size(I);
 
-orangeMask = segment_orange_mask(I);
-[L,num] = bwlabel(orangeMask);
+mask = segment_mask(I);
+[L,num] = bwlabel(mask);
 
 numBuoys = 0;
 numSwimmers = 0;

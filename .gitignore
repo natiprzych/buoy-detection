@@ -5,4 +5,4 @@
 *.autosave
 *.mex*
 
-/results/figures
+/results
